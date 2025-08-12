@@ -1,0 +1,18 @@
+{
+    "title": "Trabajo Final - Ingeniería de Datos con Databricks",
+    "instructions": "Proyecto ETL usando Databricks con arquitectura Medallion (Bronze, Silver, Gold).",
+    "details": [
+        "Trabajo Final",
+        "Realizar un ETL utilizando Databricks, pueden elegir un dataset que más deseen y con esto realizar las tres fases del proyecto: Bronze, Silver y Gold.",
+        "Esta es la estructura que se busca tener en el proyecto, guardar los archivos en el storage account y luego poder pasar por las fases de la arquitectura Medallion (Bronze, Silver y Gold).",
+        "Consideraciones:",
+        "La fuente (capa raw) a utilizar son las que se muestran en la imagen, podrían optar por cualquier modo visto en clase o algo adicional.",
+        "ETL: Debe estar basado en lenguaje pyspark y debe incluir todo lo aprendido",
+        "El destino podría optar cualquier servicio de visualización que gusten.",
+        "La estructura de los objetos es:",
+        "Entregables:",
+        "Desarrollar los notebooks del ETL de bronce, silver y Golden, si usan los entregables del CI/CD, entre otros.",
+        "Desarrollar un PPT o Word explicando lo desarrollado.",
+        "Datasets de ayuda:"
+    ]
+}
