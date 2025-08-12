@@ -1,3 +1,4 @@
+
 # Project: ETL with Databricks
 
 This project demonstrates an ETL (Extract, Transform, Load) process using Databricks with a Medallion architecture (Bronze, Silver, Gold).
@@ -20,7 +21,7 @@ You will need to create a Unity Catalog metastore and mount the following volume
 
 ## Dataset
 
-The dataset used is the Iris dataset, which is a classic dataset in machine learning and statistics. It contains 150 instances of iris flowers, each with four features: sepal length, sepal width, petal length, and petal width. The dataset also includes the species of each flower.
+The dataset used is the "Adult" dataset from the UCI Machine Learning Repository. It contains information about individuals from a 1994 census database, including age, workclass, education, marital status, occupation, and more. The dataset is used to predict whether an individual's income exceeds $50K/yr.
 
 The dataset is downloaded from the internet and stored in the GCS bucket.
 
@@ -36,6 +37,6 @@ The project follows the Medallion architecture, which consists of three layers:
 
 The ETL process is implemented in three Jupyter notebooks, one for each layer:
 
-*   **01-bronze.ipynb:** This notebook reads the raw data from the GCS bucket and writes it to a Delta table in the Bronze layer, using a Unity Catalog volume.
+*   **01-bronze.ipynb:** This notebook reads the raw data from the GCS bucket and writes it to a Delta table in the Bronze layer, using a Unity Catalog volume. The schema is defined using DDL.
 *   **02-silver.ipynb:** This notebook reads the data from the Bronze layer, performs some data cleaning and transformation, and writes the transformed data to a new Delta table in the Silver layer, using a Unity Catalog volume.
 *   **03-gold.ipynb:** This notebook reads the data from the Silver layer, performs some aggregations, and writes the aggregated data to a new Delta table in the Gold layer, using a Unity Catalog volume.
